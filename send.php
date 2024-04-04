@@ -7,7 +7,7 @@ $comment = $_POST["comment"];
 $message = '
                 <html>
                 <head>
-                  <title>New application - Pimakina.prmgroup.com.ua</title>
+                  <title>New application - Fiellday.prmgroup.com.ua</title>
                 </head>
                 <body>
                   <p><b>Name:</b> ' . $name . '</p>
@@ -19,12 +19,12 @@ $message = '
                 ';
 
 //$to = $email;
-$to = 'b.yaronnyi@gmail.com';
-$subject = 'New application - Pimakina.prmgroup.com.ua';
+$to = 'company.prm.group@gmail.com';
+$subject = 'New application - Fiellday.prmgroup.com.ua';
 $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-$headers .= 'From: info@pimakina.prmgroup.com.ua' . "\r\n" .
-    'Reply-To: info@pimakina.prmgroup.com.ua' . "\r\n" .
+$headers .= 'From: company.prm.group@gmail.com' . "\r\n" .
+    'Reply-To: company.prm.group@gmail.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
 if (mail($to, $subject, $message, $headers)) {
