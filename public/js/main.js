@@ -102,7 +102,33 @@ $('a[href^="#"]').on('click', function (e) {
     }, 900, 'swing', function () {});
 });
 
-//E-mail Ajax Send =====================================================
+// ========================TEST=============================
+
+    const buttonsModal = document.querySelectorAll('.modal-js');
+    if (buttonsModal) {
+        buttonsModal.forEach(function (item) {
+            item.addEventListener('click', (event) => {
+                const modal = document.querySelector('#modal');
+                if (modal) {
+                    modal.classList.add('active');
+                    document.body.classList.add('overflow');
+                }
+            });
+        });
+    }
+
+    const buttonModalClose = document.querySelector('#modal-close');
+    if (buttonModalClose) {
+        buttonModalClose.addEventListener('click', (event) => {
+            const modal = document.querySelector('#modal');
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.classList.remove('overflow');
+            }
+        });
+    }
+
+    //E-mail Ajax Send =====================================================
     const form = document.querySelector('.form');
 
     if (form) {
@@ -141,4 +167,4 @@ $('a[href^="#"]').on('click', function (e) {
                 });
         });
     }
- 
+

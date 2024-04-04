@@ -18,12 +18,12 @@
 </head>
 
 <body>
+
 <!-- HEADER -->
 <header class="header__navbar">
     <div class="container">
         <div class="header__navbar__wrapper">
-            <a class="navbar__logo" href="#"><img class="navbar__logo-img" src="/public/img/prm-logo.svg"
-                    alt="prm-logo"></a>
+            <h1 class="navbar__logo"><img class="navbar__logo-img" src="/public/img/prm-logo.svg" alt="prm-logo"></h1>
             <nav class="nav__wrapper">
                 <ul class="header__menu">
                     <li class="header__menu__item"><a data-goto=".section__1" class="header__menu__link" href="#">Про
@@ -44,7 +44,8 @@
                             <a href="#" class="lang_shadow-item">En</a>
                         </div>
                     </div>
-                    <button class="primary-btn primary-btn-black">Залишити заявку</button>
+
+                    <button type="button" class="primary-btn primary-btn-black modal-js">Залишити заявку</button>
                 </div>
             </nav>
             <div class="nav__mobile__menu">
@@ -60,7 +61,7 @@
                         <a href="/en/index.html" class="lang_shadow-item">En</a>
                     </div>
                 </div>
-                <button class="primary-btn primary-btn-black">Залишити заявку</button>
+                <button type="button" class="primary-btn primary-btn-black modal-js">Залишити заявку</button>
             </div>
         </div>
     </div>
@@ -73,8 +74,8 @@
     <div class="container">
         <div class="banner__wrapper">
             <div class="banner__info">
-                <h1 class="banner__title">FIELLDAY - Збір успіху, збільшення врожаю!</h1>
-                <button class="primary-btn primary-btn-white">Залишити заявку</button>
+                <h2 class="banner__title">FIELLDAY - Збір успіху, збільшення врожаю!</h2>
+                <button type="button" class="primary-btn primary-btn-white modal-js">Залишити заявку</button>
             </div>
             <img class="banner__img" src="/public/img/banner-logo.png" alt="prm-img">
         </div>
@@ -90,7 +91,7 @@
         <div class="about__wrapper">
             <img class="about__img" src="/public/img/about-vehicle.png" alt="about-vehicle">
             <div class="about__info__box">
-                <h2 class="about__info__title">Про FIELLDAY</h2>
+                <p class="about__info__title">Про FIELLDAY</p>
                 <p class="about__info__text"> FIELLDAY - бренд родом з Черкас, що спеціалізується на виробництві
                     сільськогосподарського обладнання, зокрема, жниварок. Їхня техніка забезпечує високу
                     продуктивність та якісне збирання врожаю, що допомагає збільшити прибутковість бізнесу та значно
@@ -172,9 +173,7 @@
                 <p class="advantages__text">FIELLDAY пропонує різноманітний асортимент сільськогосподарської
                     техніки, яка задовольняє потреби сучасних фермерів. </p>
             </div>
-
-
-
+            
         </div>
     </div>
 </section>
@@ -188,7 +187,8 @@
                     жниварки для збирання соняшнику та кукурудзи, обробний інструмент і різноманітне обладнання для
                     високопродуктивних сільськогосподарських робіт. Ми запрошуємо вас ознайомитися з каталогом
                     бренду.</p>
-                <a href="/public/files/fiellday.pdf" class="primary-btn primary-btn-black" target="_blank">Завантажити Каталог</a>
+                <a href="/public/files/fiellday.pdf" class="primary-btn primary-btn-black" target="_blank">Завантажити
+                    Каталог</a>
             </div>
             <img class="catalog__img" src="/public/img/catalog-img.png" alt="">
         </div>
@@ -196,6 +196,28 @@
 </section>
 
 <section class="section__4 section__certificates" id="section__4">
+    <div class="container">
+        <div class="certificates__wrapper">
+            <img class="certificates__img" src="/public/img/certif-img.jpeg" alt="certificates">
+            <a href="/public/files/fiellday-cert.pdf" class="primary-btn primary-btn-black  mob-show "
+                target="_blank">Завантажити сертифікат</a>
+            <div class="certificates__box">
+                <p class="about__info__title">Cертифікати</p>
+                <p class="certificates__text">Наші сертифікати підтверджують високу якість наших продуктів і послуг. Ми
+                    пишаємося отриманими нагородами та визнанням наших досягнень у відповідних галузях. Наші
+                    сертифікати свідчать про нашу здатність забезпечувати надійність, безпеку та ефективність в усіх
+                    аспектах нашої діяльності. Вони є важливим підтвердженням нашої присутності на ринку та
+                    зобов'язанням перед нашими клієнтами щодо надання найкращих можливих продуктів та обслуговування.
+                </p>
+                <a href="/public/files/fiellday-cert.pdf" class="primary-btn primary-btn-black desc-show"
+                    target="_blank">Завантажити сертифікат</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--  <section class="section__4 section__certificates" id="section__4">
     <div class="container">
         <p class="about__info__title">Cертифікати</p>
 
@@ -218,6 +240,7 @@
         </div>
     </div>
 </section>
+-->
 
 
 <section class="section__5 section__contacts" id="section__5">
@@ -252,13 +275,13 @@
                     <option value="city-two">Dubai</option>
                 </select>
                 <div id="city-one" class="swap-item">
-                    <a href="#">
+                    <a href="https://maps.app.goo.gl/ghQeBEhMqWg3uHBNA" target="_blank">
                         <img src="/public/img/map-kyiv.jpeg" alt="map-kyiv">
                     </a>
                     <p class="contacts__city__adress">Київ, БЦ Осокорки, Дніпровська набережна, 26</p>
                 </div>
                 <div id="city-two" class="swap-item" style="display:none">
-                    <a href="#">
+                    <a href="https://maps.app.goo.gl/4tPEx9ve24sv6cU56" target="_blank">
                         <img src="/public/img/map-dubai.jpeg" alt="map-dubai">
                     </a>
                     <p class="contacts__city__adress">Dubai, U.A.E. Business Center 1, M Floor, The Meydan Hotel, Nad Al
@@ -276,10 +299,12 @@
     <div class="container">
         <div class="footer__wrapper">
             <ul class="footer__nav__wrapper">
-                <li class="header__menu__item footer__item"><a class="footer__link" href="#section__1">Про Fiellday</a></li>
+                <li class="header__menu__item footer__item"><a class="footer__link" href="#section__1">Про Fiellday</a>
+                </li>
                 <li class="header__menu__item footer__item"><a class="footer__link" href="#section__2">Переваги</a></li>
                 <li class="header__menu__item footer__item"><a class="footer__link" href="#section__3">Каталог</a></li>
-                <li class="header__menu__item footer__item"><a class="footer__link" href="#section__4">Сертифікати</a></li>
+                <li class="header__menu__item footer__item"><a class="footer__link" href="#section__4">Сертифікати</a>
+                </li>
                 <li class="header__menu__item footer__item"><a class="footer__link" href="#section__5">Контакти</a></li>
             </ul>
             <img class="footer__logo" src="/public/img/prm-logo.svg" alt="prm-logo"></a>
@@ -290,7 +315,24 @@
 
 
 
-
+<div class="form-modal-wrapper" id="modal">
+    <div class="form-modal">
+        <p class="modal__title">Залишити заявку:</p>
+        <form class="form">
+            <input class="form__input" id="name" type="text" placeholder="Імʼя...">
+            <input class="form__input" id="phone" pattern="^[0-9*#+]+$" minlength="4" maxlength="15" required type="tel"
+                placeholder="Номер телефону...">
+            <input class="form__input" type="email" id="email" placeholder="Пошта..." required>
+            <textarea class="form__textarea" id="comment" name="comment" placeholder="Повідомлення..."></textarea>
+            <button type="submit" class="primary-btn primary-btn-black form_button">Підтвердити</button>
+        </form>
+        <button class="form-modal__close-button" id="modal-close" type="button">Close</button>
+        <div class="form-message">
+            <h2>Дякуємо!</h2>
+            <p>Незабаром ми зв’яжемося з вами!</p>
+        </div>
+    </div>
+</div>
 
     <script src="/public/js/vendor/jquery/jquery.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
