@@ -11,7 +11,7 @@ $message = '
                 </head>
                 <body>
                   <p><b>Name:</b> ' . $name . '</p>
-                  <p><b>Phome number:</b> <a href="tel:' . $phone . '">' . $phone . '</a></p>
+                  <p><b>Phone number:</b> <a href="tel:' . $phone . '">' . $phone . '</a></p>
                   <p><b>Email:</b> <a href="mailto:' . $email . '">' . $email . '</a></p>
                   <p><b>Comment:</b> ' . $comment . '</p>
                 </body>
@@ -19,7 +19,7 @@ $message = '
                 ';
 
 //$to = $email;
-$to = 'b.yaronnyi@gmail.com';
+$to = 'company.prm.group@gmail.com';
 $subject = 'New application - Fiellday.prmgroup.com.ua';
 $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
