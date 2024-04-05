@@ -235,7 +235,7 @@
         <div class="contacts__wrapper">
             <div class="contacts__box">
 
-                <form class="form">
+                <form class="form form-static">
                     <div class="form__field">
                         <input class="form__input" id="name" type="text" placeholder="Name...">
                     </div>
@@ -300,11 +300,10 @@
 </footer>
 
 
-
 <div class="form-modal-wrapper" id="modal">
     <div class="form-modal">
         <p class="modal__title">Leave a request:</p>
-        <form class="form">
+        <form class="form form__modal">
             <input class="form__input" id="name" type="text" placeholder="Name...">
             <input class="form__input" id="phone" pattern="^[0-9*#+]+$" minlength="4" maxlength="15" required type="tel"
                 placeholder="Phone number...">
@@ -313,10 +312,16 @@
             <button type="submit" class="primary-btn primary-btn-black form_button">Submit</button>
         </form>
         <button class="form-modal__close-button" id="modal-close" type="button">Close</button>
-        <div class="form-message">
-            <h2>Thank you!</h2>
-            <p>We will contact you soon!</p>
-        </div>
+
+    </div>
+</div>
+
+<div class="form-message">
+    <div class="form-message-content">
+        <img class="navbar__logo-img" src="/public/img/prm-logo.svg" alt="prm-logo">
+        <p class="form-message-title">Thank you!</p>
+        <p class="form-message-text">We will contact you soon!</p>
+        <button class="form-modal__close-button " id="modal-close" type="button">Close</button>
     </div>
 </div>
 

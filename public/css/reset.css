@@ -51,6 +51,7 @@ button:active, button:focus{
 	outline: none;
 }
 button{ 
+	font-family: "Ubuntu", sans-serif;
 	border: none;
 }
 button:hover{ 

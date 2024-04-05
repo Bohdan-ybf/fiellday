@@ -63,7 +63,7 @@
                 <div class="dropdowns_lang">
                     <p class="dropdowns_lang-item">Укр</p>
                     <a href="/en/" class="dropdowns_lang_content">
-                        <p  class="lang_shadow-item">En</p>
+                        <p class="lang_shadow-item">En</p>
                     </a>
                 </div>
                 <button type="button" class="primary-btn primary-btn-black modal-js">Залишити заявку</button>
@@ -208,7 +208,10 @@
                 target="_blank">Завантажити сертифікат</a>
             <div class="certificates__box">
                 <p class="about__info__title">Cертифікати</p>
-                <p class="certificates__text">Fiellday дотримується всіх технічних стандартів і вимог, що стосуються виробництва різноманітних машин та устаткування. Компанія вкладає значні зусилля в те, щоб кожен аспект виробництва відповідав найвищим стандартам якості та безпеки. Завдяки цьому, клієнти Fiellday можуть бути впевнені в надійності користування асортиментом, що пропонує компанія.</p>
+                <p class="certificates__text">Fiellday дотримується всіх технічних стандартів і вимог, що стосуються
+                    виробництва різноманітних машин та устаткування. Компанія вкладає значні зусилля в те, щоб кожен
+                    аспект виробництва відповідав найвищим стандартам якості та безпеки. Завдяки цьому, клієнти Fiellday
+                    можуть бути впевнені в надійності користування асортиментом, що пропонує компанія.</p>
                 <a href="/public/files/fiellday-cert.pdf" class="primary-btn primary-btn-black desc-show"
                     target="_blank">Завантажити сертифікат</a>
             </div>
@@ -216,40 +219,13 @@
     </div>
 </section>
 
-
-<!--  <section class="section__4 section__certificates" id="section__4">
-    <div class="container">
-        <p class="about__info__title">Cертифікати</p>
-
-        <div class="certificatesSlider">
-            <div class="slider-item">
-                <img src="/public/img/delete-sert.jpeg" alt="">
-            </div>
-            <div class="slider-item">
-                <img src="/public/img/delete-sert.jpeg" alt="">
-            </div>
-            <div class="slider-item">
-                <img src="/public/img/delete-sert.jpeg" alt="">
-            </div>
-            <div class="slider-item">
-                <img src="/public/img/delete-sert.jpeg" alt="">
-            </div>
-            <div class="slider-item">
-                <img src="/public/img/delete-sert.jpeg" alt="">
-            </div>
-        </div>
-    </div>
-</section>
--->
-
-
 <section class="section__5 section__contacts" id="section__5">
     <div class="container">
         <p class="contacts__title">Контакти:</p>
         <div class="contacts__wrapper">
             <div class="contacts__box">
 
-                <form class="form">
+                <form class="form form-static">
                     <div class="form__field">
                         <input class="form__input" id="name" type="text" placeholder="Імʼя...">
                     </div>
@@ -318,7 +294,7 @@
 <div class="form-modal-wrapper" id="modal">
     <div class="form-modal">
         <p class="modal__title">Залишити заявку:</p>
-        <form class="form">
+        <form class="form form__modal">
             <input class="form__input" id="name" type="text" placeholder="Імʼя...">
             <input class="form__input" id="phone" pattern="^[0-9*#+]+$" minlength="4" maxlength="15" required type="tel"
                 placeholder="Номер телефону...">
@@ -327,10 +303,16 @@
             <button type="submit" class="primary-btn primary-btn-black form_button">Підтвердити</button>
         </form>
         <button class="form-modal__close-button" id="modal-close" type="button">Close</button>
-        <div class="form-message">
-            <h2>Дякуємо!</h2>
-            <p>Незабаром ми зв’яжемося з вами!</p>
-        </div>
+
+    </div>
+</div>
+
+<div class="form-message">
+    <div class="form-message-content">
+        <img class="navbar__logo-img" src="/public/img/prm-logo.svg" alt="prm-logo">
+        <p class="form-message-title">Дякуємо!</p>
+        <p class="form-message-text">Незабаром ми зв’яжемося з вами!</p>
+        <button class="form-modal__close-button " id="modal-close" type="button">Close</button>
     </div>
 </div>
 
