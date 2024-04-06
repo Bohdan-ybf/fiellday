@@ -190,23 +190,23 @@
       formModal.addEventListener('submit', (event) => {
           event.preventDefault();
           event.stopPropagation();
-          let name = document.getElementById('name').value;
-          let phone = document.getElementById('phone').value;
-          let email = document.getElementById('email').value;
-          let comment = document.getElementById('comment').value;
+          let name = document.getElementById('name-modal').value;
+          let phone = document.getElementById('phone-modal').value;
+          let email = document.getElementById('email-modal').value;
+          let comment = document.getElementById('comment-modal').value;
 
 
           let date = new Date();
           let timestamp = date.getTime();
           const data = new FormData();
           data.append('action', 'submit_form');
-          data.append('name', name);
-          data.append('phone', phone);
-          data.append('email', email);
-          data.append('comment', comment);
+          data.append('name-modal', name);
+          data.append('phone-modal', phone);
+          data.append('email-modal', email);
+          data.append('comment-modal', comment);
 
 
-          fetch('send.php', {
+          fetch('send-modal.php', {
                   method: "POST",
                   body: data
               })

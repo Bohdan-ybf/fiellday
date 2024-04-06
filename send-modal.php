@@ -1,9 +1,9 @@
 <?php
 $result = '';
-$name = $_POST["name"];
-$phone = $_POST["phone"];
-$email = $_POST["email"];
-$comment = $_POST["comment"];
+$name = $_POST["name-modal"];
+$phone = $_POST["phone-modal"];
+$email = $_POST["email-modal"];
+$comment = $_POST["comment-modal"];
 $message = '
                 <html>
                 <head>
